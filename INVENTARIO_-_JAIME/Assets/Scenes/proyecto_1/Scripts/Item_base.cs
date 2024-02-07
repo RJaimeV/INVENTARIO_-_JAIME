@@ -6,6 +6,7 @@ using UnityEngine;
 
 public class Item_base : MonoBehaviour
 {
+    //Aquí se define que cualquier objeto que colisione con otro será destruido.
     void OnTriggerEnter2D(Collider2D other)
     {
         Destroy(gameObject);
