@@ -135,9 +135,10 @@ GameObject:
   - component: {fileID: 191808269}
   - component: {fileID: 191808268}
   - component: {fileID: 191808267}
+  - component: {fileID: 191808271}
   m_Layer: 0
   m_Name: Espada
-  m_TagString: Untagged
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -275,12 +276,28 @@ Transform:
   m_GameObject: {fileID: 191808266}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 191.98643, y: 101.97931, z: 0}
+  m_LocalPosition: {x: -5.8, y: 2.7, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &191808271
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 191808266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53f469b14b813aa458000fe6440769a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nombre: 
+  sprite: {fileID: 21300000, guid: ee1cffc08add9bd4ebca8144d716de72, type: 3}
+  vida: 50
+  descripcion: 
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -712,9 +729,10 @@ GameObject:
   - component: {fileID: 1529974271}
   - component: {fileID: 1529974270}
   - component: {fileID: 1529974269}
+  - component: {fileID: 1529974273}
   m_Layer: 0
   m_Name: Carne
-  m_TagString: Untagged
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -852,12 +870,28 @@ Transform:
   m_GameObject: {fileID: 1529974268}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 191.98643, y: 101.97931, z: 0}
+  m_LocalPosition: {x: -4, y: -2.8, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1529974273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1529974268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c05f1a86e7c14074ea7d0e0fed93cfaf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nombre: 
+  sprite: {fileID: 21300000, guid: e53061c5c29c4a740be8cbe3d580d378, type: 3}
+  vida: 0
+  descripcion: 
 --- !u!1 &1590083534
 GameObject:
   m_ObjectHideFlags: 0
@@ -905,6 +939,8 @@ GameObject:
   - component: {fileID: 1621317096}
   - component: {fileID: 1621317095}
   - component: {fileID: 1621317094}
+  - component: {fileID: 1621317098}
+  - component: {fileID: 1621317099}
   m_Layer: 0
   m_Name: Puntero
   m_TagString: Untagged
@@ -1051,6 +1087,40 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1621317098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1621317093}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3a01f1d17ceaef4a8f9794e529ccf12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1621317099
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1621317093}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88aef48f11aea8546a42a50c4467aed1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  invList:
+  - {fileID: 1369193291}
+  - {fileID: 978307843}
+  - {fileID: 1933203316}
+  inv: {fileID: 1940002899}
+  Activarinv: 0
+  selector: {fileID: 607180174}
+  opcionEliminar: {fileID: 1590083534}
+  ID: 0
+  descripcionObject: {fileID: 0}
 --- !u!1 &1837048207
 GameObject:
   m_ObjectHideFlags: 0
@@ -1063,9 +1133,10 @@ GameObject:
   - component: {fileID: 1837048210}
   - component: {fileID: 1837048209}
   - component: {fileID: 1837048208}
+  - component: {fileID: 1837048212}
   m_Layer: 0
   m_Name: Antorcha
-  m_TagString: Untagged
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1203,12 +1274,28 @@ Transform:
   m_GameObject: {fileID: 1837048207}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 191.98643, y: 101.97931, z: 0}
+  m_LocalPosition: {x: 4.7, y: -1.7, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1837048212
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1837048207}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8d47300f86d72741bcbf321903e89c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nombre: 
+  sprite: {fileID: 21300000, guid: 6fc0e3a525574a14fa603007c931d9e7, type: 3}
+  vida: 10
+  descripcion: 
 --- !u!1 &1933203316
 GameObject:
   m_ObjectHideFlags: 0
@@ -1295,6 +1382,7 @@ GameObject:
   - component: {fileID: 1940002900}
   - component: {fileID: 1940002902}
   - component: {fileID: 1940002901}
+  - component: {fileID: 1940002903}
   m_Layer: 5
   m_Name: Inventario
   m_TagString: Untagged
@@ -1364,6 +1452,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1940002899}
   m_CullTransparentMesh: 1
+--- !u!114 &1940002903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1940002899}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88aef48f11aea8546a42a50c4467aed1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  invList: []
+  inv: {fileID: 0}
+  Activarinv: 0
+  selector: {fileID: 0}
+  opcionEliminar: {fileID: 0}
+  ID: 0
+  descripcionObject: {fileID: 0}
 --- !u!1 &1959027495
 GameObject:
   m_ObjectHideFlags: 0
