@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Carne : Item_base
 {
+    //Aquí se setea lo que se pide en el Item base.
     private void Start()
     {
         SetUp("Carne", "Alimento de dioses");

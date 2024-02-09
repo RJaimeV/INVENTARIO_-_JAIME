@@ -19,6 +19,8 @@ public class Inventario : MonoBehaviour
     //Casilla en el inventario.
     public int ID = 0;
 
+    
+
     //Este método define que sucede cuando el puntero colisiona con otro objeto con el Tag "Item".
     private void OnTriggerEnter2D(Collider2D coll)
     {
@@ -30,12 +32,14 @@ public class Inventario : MonoBehaviour
                 if (invList[i].GetComponent<Image>().enabled == false)
                 {
                     invList[i].GetComponent<Image>().enabled = true;
-                    invList[i].GetComponent<Image>().sprite = coll.GetComponent<SpriteRenderer>().sprite;
+                    invList[i].GetComponent<Image>().sprite = coll.GetComponent<SpriteRenderer>().sprite;                    
                     break;
                 }
             }
         }
     }
+
+   
 
     //Esta parte define como podemos movernos en el inventario calculando con la variable ID y el número de la lista del inventario el lugar en el que nos encontramos.
     public void Navegar()
